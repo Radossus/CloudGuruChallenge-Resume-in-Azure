@@ -1,0 +1,230 @@
+/*
+Theme: BS3 Theme
+Theme: http://www.matric.cz
+Description: My Boostrap 4 responsive theme
+Version: 1
+Author: Radek Slachta
+Author URI: http://radek-slachta.com
+*/
+
+
+@import url('css/bootstrap.min.css');
+
+:root {
+    --main-font: #2C3E50;
+    --main-yellow: red;
+    --main-important: white;
+    --main-blue: #180D5B;
+}
+
+
+body {
+    /*  font-family: "Mija", “Times New Roman”, Times, “Alternate System Font”, serif;  */
+}
+
+h1{
+    color: var(--main-blue);
+}
+
+h2 {
+    color: var(--main-blue);
+}
+
+header{
+    background-color: var(--main-blue);
+}
+
+footer{
+
+}
+
+.bg-main-blue{
+    background-color: #180D5B;
+}
+
+
+#landing-intro{
+    background-color: #180D5B;
+    background-image: url("images/landing-p-bg-3.png");
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+   /* background-size: cover; */
+}
+
+#card-info{
+    background-color: #180D5B;
+    opacity: 0.8;
+    width: 80%;
+    padding: 2em 0em 3em 0em;
+}
+
+#landing-intro #intro-text{
+    padding-top: 1rem;
+    color: var(--main-important);
+}
+
+#landing-intro #intro-text h1{
+    Font-size: 350%;
+    margin-bottom: 20px;
+}
+
+#landing-intro #intro-text #landing-text{
+    Font-size: 130%;
+    margin: 0%;
+}
+
+#text-animation{
+    color: white;
+}
+
+#text1 {
+    animation-name: text1-anymation ;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    font-size: 600%;
+}
+
+#text2 {
+    animation-name: text2-anymation ;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    font-size: 400%;
+}
+
+#text3{
+    animation-name: text3-anymation ;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    font-size: 600%;
+}
+
+@keyframes text1-anymation {
+    0%   { opacity: 0}
+    50%  {  opacity: 0.7}
+    100%  { opacity: 0}
+}
+
+@keyframes text2-anymation {
+    0%   { opacity: 0}
+    50%  {  opacity: 0.8}
+    100%  {  opacity: 0}
+}
+
+@keyframes text3-anymation {
+    0%   { opacity: 0}
+    50%  {  opacity: 0.8}
+    100%  {  opacity: 0}
+}
+
+
+a {
+    text-decoration: none;
+    color: #180D5B;
+}
+
+a:hover{
+    text-decoration: none;
+
+
+}
+
+a:active{
+    text-decoration: none;
+    color:white;
+}
+
+a:focus{
+    text-decoration: none;
+}
+
+/*
+nav{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+nav.navbar-custom {
+
+}
+
+nav.navbar-custom a {
+    color: var(--main-blue);
+    font-size: larger;
+}
+nav.navbar-custom ul.navbar-nav a {
+    color: #dfe0ed;
+}
+
+nav.navbar-custom ul.navbar-nav a:hover,
+nav.navbar-custom ul.navbar-nav a:visited,
+nav.navbar-custom ul.navbar-nav a:focus,
+nav.navbar-custom ul.navbar-nav a:active {
+    color: var(--main-blue);
+}
+nav.navbar-custom ul.navbar-nav a:hover {
+    color: #a71d2a;
+
+}
+nav.navbar-custom li.divider {
+    background: #5CB85C;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #text-animation{
+        display: none;
+    }
+    #card-info{
+        width: 100%;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #text-animation{
+        display: none;
+    }
+    #card-info{
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #text-animation{
+        display: none;
+    }
+    #card-info{
+        width: 100%;
+    }
+}
+
+.wpforms-form{
+    color: white;
+    background-color: var(--main-blue);
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+    color: white !important;
+
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit],
+div.wpforms-container-full .wpforms-form button[type=submit] {
+    border-radius: 5px;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
