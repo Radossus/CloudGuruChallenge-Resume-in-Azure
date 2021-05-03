@@ -100,8 +100,11 @@
                 <li>Enabling Office 365 Services</li>
             </ul>
             <div class="mb-3">
-            <span><a a class="btn btn-primary" href="https://www.linkedin.com/in/radekslachta/" role="button" target="_blank"><span data-feather="linkedin"></span></a></span>
-            <span><a a class="btn btn-primary" href="https://twitter.com/radoss" role="button" target="_blank"> <span data-feather="twitter"></span></a></span>
+                <span><a class="btn btn-primary" href="https://www.linkedin.com/in/radekslachta/" role="button" target="_blank"><span data-feather="linkedin"></span></a></span>
+                <span><a class="btn btn-primary" href="https://twitter.com/radoss" role="button" target="_blank"> <span data-feather="twitter"></span></a></span>
+                <div class="badge badge-success p-1">
+                    Visitors counter <span id="counter" class="badge badge-light m-1"> </span>
+                </div>
             </div>
         </div>
          <div class="col-sm-4 text-center"><img class="rounded size-full" src="./images/me-1.jpg" alt="" width="287" height="314" /></div>
@@ -179,7 +182,8 @@
        })
        .then(res => {
            const count = res;
-           console.log("Counter is: ",count);
+           count = 5
+           $('#counter').text(count)
        })
        
     });
