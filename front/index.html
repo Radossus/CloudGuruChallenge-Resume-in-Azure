@@ -170,10 +170,19 @@
     const apiAzureFunction = "https://resume-challenge-app.azurewebsites.net/api/HttpTrigger1?code=t6ueWKdUpDbEVnIvq9b3Uv9Wkh9NqEsW3P1Zn0wHjefdQywEowewlw=="
 
     document.addEventListener("DOMContentLoaded", function(){
-       fetch(apiAzureFunction, {
+       
+        fetch(apiAzureFunction, {
            mode: 'cors',
        })
-       console.log("Log from site! ");
+       .then(reseponse => {
+           return reseponse.json()
+       })
+       .then(res => {
+           const count = res;
+           console.log("Counter is: ",count);
+       })
+
+       console.log("Log from site! ", count);
     });
 </script>
 
