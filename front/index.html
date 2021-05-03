@@ -166,6 +166,16 @@
    </div>
 </footer>
 
+<script>
+    const apiAzureFunction = "https://resume-challenge-app.azurewebsites.net/api/HttpTrigger1?code=t6ueWKdUpDbEVnIvq9b3Uv9Wkh9NqEsW3P1Zn0wHjefdQywEowewlw=="
+
+    document.addEventListener("DOMContentLoaded", function(){
+       fetch(apiAzureFunction, {
+           mode: 'cors',
+       })
+    });
+</script>
+
 
 <!-- end of main conteiner> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
