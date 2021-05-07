@@ -60,13 +60,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1
-
-    - name: build and package Azure function
-      run: |
-        dotnet restore
-        dotner build -c Release
-        # dotnet test
-        dotnet publish -c Release -o dist
         
     - name: Publish Azure Functions
       uses: Azure/functions-action@v1.3.2
