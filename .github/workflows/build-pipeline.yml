@@ -14,20 +14,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-
-    # Install the .NET Core workload
-    - name: Install .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1
         
     - name: Publish Azure Functions
       uses: Azure/functions-action@v1.3.2
       with:
         # Name of the Azure Function App
-        app-name: My Resume function
+        app-name: Resume Page Counter
         # Path to package or folder. *.zip or a folder to deploy
         package: backend
         publish-profile: ${{ secrets.PUBLISH_PROFILE }}
