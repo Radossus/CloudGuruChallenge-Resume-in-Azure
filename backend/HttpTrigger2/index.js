@@ -6,5 +6,4 @@ module.exports = async function (context, req, data) {
        body: data[0].counter
   
     };
- 
 }
