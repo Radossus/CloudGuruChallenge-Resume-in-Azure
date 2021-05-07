@@ -1,0 +1,37 @@
+{
+  "bindings": [
+      {
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": [
+              "get",
+              "post"
+          ]
+      },
+      {
+          "type": "http",
+          "direction": "out",
+          "name": "res"
+      },
+      {
+          "name": "inputDocument",
+          "direction": "in",
+          "type": "cosmosDB",
+          "databaseName": "resume-challenge-db",
+          "collectionName": "resume-challenge-container",
+          "connectionStringSetting": "resume-challenge_DOCUMENTDB",
+          "partitionKey": "/pages"
+      },
+      {
+          "name": "outputDocument",
+          "direction": "out",
+          "type": "cosmosDB",
+          "databaseName": "resume-challenge-db",
+          "collectionName": "resume-challenge-container",
+          "connectionStringSetting": "resume-challenge_DOCUMENTDB",
+          "partitionKey": "/pages"
+      }
+  ]
+}
