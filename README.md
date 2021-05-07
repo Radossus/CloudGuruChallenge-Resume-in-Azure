@@ -4,7 +4,10 @@ The idea of challenge is very simple - to build a resume and host it with Azure 
 
 Official challenge site link https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure?utm_source=facebook&utm_medium=social&utm_campaign=cloudguruchallenge
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5fc0eea7b8c8431dcd59cd24f57147fc586a7d1
 ## The steps
 
 * [X] Create a GitHub repository
