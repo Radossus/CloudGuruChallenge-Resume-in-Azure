@@ -4,6 +4,5 @@ module.exports = async function (context, req, data) {
     context.bindings.outputDocument.counter += 1;
     context.res = {
        body: data[0].counter
-  
     };
 }
