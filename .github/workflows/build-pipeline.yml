@@ -24,6 +24,7 @@ jobs:
     - name: Use Node.js
       shell: bash
       run: |
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
         npm install
         npm run test --if-present
         npm test
