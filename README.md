@@ -2,12 +2,10 @@
 
 The idea of challenge is very simple - to build a resume and host it with Azure services.
 
-Official challenge site link https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure?utm_source=facebook&utm_medium=social&utm_campaign=cloudguruchallenge
+Official challenge site link https://acloudguru.com/blog/engineering/cloudguruchallenge-your-resume-in-azure
 
-<<<<<<< HEAD
+My Resume in Azure link: https://www.radek-slachta.com
 
-=======
->>>>>>> c5fc0eea7b8c8431dcd59cd24f57147fc586a7d1
 ## The steps
 
 * [X] Create a GitHub repository
@@ -18,4 +16,4 @@ Official challenge site link https://acloudguru.com/blog/engineering/cloudguruch
 * [X] Deploy the website to Azure Static Web App
 * [X] Enable HTTPS and custom domain support
 * [X] Set up GitHub actions
-* [ ] Add tests to the counter function
+* [X] Add tests to the counter function
