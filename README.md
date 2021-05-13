@@ -16,4 +16,3 @@ My Resume in Azure link: https://www.radek-slachta.com
 * [X] Deploy the website to Azure Static Web App
 * [X] Enable HTTPS and custom domain support
 * [X] Set up GitHub actions
-* [X] Add tests to the counter function
